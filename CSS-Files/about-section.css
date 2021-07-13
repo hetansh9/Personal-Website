@@ -1,0 +1,21 @@
+body {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+
+.section {
+    padding: 100px 0 100px;
+
+}
+
+.about-image {
+    max-width: 100%;
+}
+
+.skills-section {
+    background-color: #9AECDB;
+
+}
