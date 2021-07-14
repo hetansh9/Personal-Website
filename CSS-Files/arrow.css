@@ -1,0 +1,69 @@
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3; /*the order it is going to be put in as it is overlay */
+    background-color: rgba(0,0,0,0.4);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+
+.slides-navigation .next, .slides-navigation .prev{
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../images/next.png);
+}
+
+.slides-navigation a.next:hover{
+    transform: scale(2);
+    
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../images/left-arrow.png);
+}
+
+.slides-navigation a.prev:hover{
+    transform: scale(2);
+    
+}
+
+.Title {
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.Title .heading p {
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    font-weight: 100;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.Title .heading .main {
+    font-size: 50px;
+
+}
+
+.Title .heading .sub-heading {
+    font-size: 20px;
+    
+}
