@@ -1,0 +1,59 @@
+
+
+.square-item {
+    margin-top: 30px;
+    position: relative;
+}
+
+.square-inside-container {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444;
+    border-top: none;
+}
+
+.square-inside-container:before,
+.square-inside-container:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444;
+
+}
+
+.square-inside-container:before {
+    right: 0px;
+}
+
+.square-inside-container:after{
+    
+    left: 0px;
+}
+
+.square-Content h2 {
+    font-size: 56px;
+    margin: 10px;
+    font-weight: 400;
+    color:rgb(3, 3, 3);
+}
+
+.square-Content h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    
+}
+
+.square-Icon {
+    position: absolute;
+    left: 50%;
+    top:  -37px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+
+}

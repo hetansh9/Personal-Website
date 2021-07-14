@@ -7,7 +7,7 @@ body {
 
 
 .section {
-    padding: 100px 0 100px;
+    padding: 100px 0;
 
 }
 
@@ -18,4 +18,35 @@ body {
 .skills-section {
     background-color: #9AECDB;
 
+}
+
+.skill {
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+.chart {
+    position: relative;
+    width: 152px;
+    height:152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+    color: rgb(0, 0, 0);
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after{
+    content: '%';
 }

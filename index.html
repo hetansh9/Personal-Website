@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hetansh Patel</title>
 
+    
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/superslides.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/arrow.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/about-section.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/owl.carousel.min.css">
-
+    <link rel = "stylesheet" type = "text/css" href = "CSS-Files/stats.css">
+    <script src="https://kit.fontawesome.com/3060423083.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,7 +61,7 @@
             </div>
         </div>    
     </div>
-    <div id = "skills" class = "skills-section">
+    <div id = "skills" class = "skills-section section">
 
         <div class = "container">
             
@@ -71,31 +73,147 @@
                 </div>
                 <div class="owl-carousel owl-theme">
                    <div class = "skill">
-                       <span class = "chart" data-percent = "67">
+                       <span class = "chart" data-percent = "85">
                             <span class = "percent">67</span>
                                 <canvas height = "152" width = "152"></canvas>
                         </span>
                         <h4>Javascript</h4>
-                        <p>Used in web based projects</p>
+                        <p>Used in web based</p>
                     </div>
+                    <div class = "skill">
+                        <span class = "chart" data-percent = "90">
+                             <span class = "percent">90</span>
+                                 <canvas height = "152" width = "152"></canvas>
+                         </span>
+                         <h4>HTML</h4>
+                         <p>Personal Project Experience</p>
+                     </div>
+                    <div class = "skill">
+                        <span class = "chart" data-percent = "80">
+                             <span class = "percent">80</span>
+                                 <canvas height = "152" width = "152"></canvas>
+                         </span>
+                         <h4>Python</h4>
+                         <p>Experience with Machine Learning Projects</p>
+                     </div>
+                     <div class = "skill">
+                        <span class = "chart" data-percent = "60">
+                             <span class = "percent">60</span>
+                                 <canvas height = "152" width = "152"></canvas>
+                         </span>
+                         <h4>Swift</h4>
+                         <p>Personal Project Experience</p>
+                     </div>
                 </div>
                 
             </div>
         </div>    
+    </div>
+    <div id = "stats" class = "stats-section section">
+
+        <div class = "container">
+            
+            <div class = "row">
+
+                <div class = "col-md-4 col-sm-6">
+
+                    <div class = "square-item">
+
+                        <div class = "square-inside-container">
+
+                            <div class = "square-Icon">
+                                
+                                <i class = "fa fa-book"></i>
+                            
+                            </div>
+
+
+                            <div class = "square-Content">
+                                <h2 class = "counter">5</h2>
+                                <h3>Total Projects</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class = "col-md-4 col-sm-6">
+
+                    <div class = "square-item">
+
+                        <div class = "square-inside-container">
+
+                            <div class = "square-Icon">
+                                
+                                <div id = "div1" class = "fa"></div>
+                                    <script>function hourglass() {
+                                        var a;
+                                        a = document.getElementById("div1");
+                                        a.innerHTML = "&#xf251;";
+                                        setTimeout(function () {
+                                            a.innerHTML = "&#xf252;";
+                                          }, 1000);
+                                        setTimeout(function () {
+                                            a.innerHTML = "&#xf253;";
+                                          }, 2000);
+                                      }
+                                      hourglass();
+                                      setInterval(hourglass, 3000);</script>
+                            
+                            </div>
+
+
+                            <div class = "square-Content">
+                                <h2 class = "counter">50</h2>
+                                <h3>Hours Spent</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class = "col-md-4 col-sm-6">
+
+                    <div class = "square-item">
+
+                        <div class = "square-inside-container">
+
+                            <div class = "square-Icon">
+                                
+                                <i class = "fas fa-code"></i>
+                            
+                            </div>
+
+
+                            <div class = "square-Content">
+                                <h2 class = "counter">500</h2>
+                                <h3>Lines of Code</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                
+                
+            </div>
+        </div> 
+
     </div>
 
     <script src = "JS/jquery.superslides.min.js"></script>
     <script src = "JS/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src = "JS/script.js"></script>
     <script src = "JS/owl.carousel.min.js"></script>
     <script src = "JS/jquery.easypiechart.min.js"></script>
+    <script src = "JS/countUp.js"></script>
+    <script src = "JS/countUp-jquery.js"></script>
+    <script src = "JS/script.js"></script>
 
 
 </body>
-
-        
-
-
 </html>

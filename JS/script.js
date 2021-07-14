@@ -35,20 +35,45 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         }
     });
+  
     
-    $('.chart').easyPieChart({
-       easing: 'easeInOut',
-       barColor: '#fff',
-       trackColor: false,
-       lineWidth: 4,
-       size: 152,
-       animate: {
-           duration: 4500,
-           enabled: true
-       },
-       onStep: function(from, to, percent) {
-           $(this.el).find('.percent').text(Math.round(percent));
-       }
+
+    var skillsOffset = $(".skills-section").offset().top;
+
+    $(window).on('scroll',function() {
+        //gets the page value or the distance from the top to the section
+        if(window.pageYOffset > skillsOffset - $(window).height() + 200) {
+            $('.chart').easyPieChart({
+                easing: 'easeInOut',
+                barColor: '#fff',
+                trackColor: false,
+                lineWidth: 4,
+                size: 152,
+                animate: {
+                    duration: 1500,
+                    enabled: true
+                },
+                onStep: function(from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+
+        }
+    });
+
+    var statsOffset = $(".stats-section").offset().top;
+    var countNumber = false;
+    $(window).on('scroll',function() {
+        if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
+            $(".counter").each(function() {
+                var element = $(this);
+                var endValue = parseInt(element.text());
+                element.countup(endValue);
+            });
+        
+            countNumber = true;
+        
+        }
     });
 
 });
