@@ -1,14 +1,16 @@
 body {
     font-size: 14px;
-    color: #333;
-    background-color: #fff;
+    /* color: #fff; */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
     letter-spacing: 1px;
 }
 
+.col-md-7 {
+    color: #fff;
+}
 
-.section {
-    padding: 100px 0;
-
+.row{
+    padding: 100px;
 }
 
 .about-image {
@@ -16,10 +18,8 @@ body {
 }
 
 .skills-section {
-    background-color: #9AECDB;
-
+    color: #fff;
 }
-
 .skill {
     text-align: center;
     margin-left: 10px;
@@ -41,7 +41,7 @@ body {
 }
 
 .chart .percent {
-    color: rgb(0, 0, 0);
+    color: #fff ;
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
