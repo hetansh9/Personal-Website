@@ -1,0 +1,36 @@
+.filter a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.filter li {
+    display: inline-block;
+    padding:  5px;
+}
+
+.filter .current {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #fff;
+}
+
+.filter {
+    text-align: center;
+    width: 100%;
+
+}
+
+.projects .heading {
+    font-family: sans-serif;
+    color:#fff;
+    font-size: x-large;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+}
