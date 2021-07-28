@@ -159,9 +159,77 @@
 
 .copyrightSection p {
     margin: 0;
-    
+
+}
+#navigation {
+    /* background-color: #88BDBC; */
+    /* background-color: #29648A; */
+    background-color: #1D2731;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+
 }
 
+#navigation li {
+    padding: 0 10px;
+
+}
+
+#navigation a {
+    color: #fff;
+}
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+    background: url(../images/icons8-menu-48.png);
+    background-size: 100%;
+}
+
+/* .navbar-toggler-icon {
+    color: #fff;
+    background-size: 100%;
+
+}
+ .navbar-brand {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    margin: 1em;
+    width: 40px;
+}
+
+.navbar-toggler-icon:after,
+.navbar-toggler-icon:before,
+.navbar-toggler-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content : '';
+    height: 5px;
+    margin: 7px 0;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+
+}
+.navbar-toggler-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+.navbar-toggler-icon:hover div {
+    transform: scale(0);
+} */
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
 
 
 
