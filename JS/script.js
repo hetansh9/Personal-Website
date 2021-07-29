@@ -1,3 +1,23 @@
+$(window).on("load", function() {
+
+    $(".loader .innner").fadeOut(500, function() {
+
+            $(".loader").fadeOut(700);
+    
+    });
+
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+           duration: 1500,
+           easing: 'linear',
+           queue: false 
+        }
+    });
+
+});
+
+
 document.addEventListener("DOMContentLoaded", function(){
     
     // superslides function
@@ -18,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     $('.owl-carousel').owlCarousel({
+        nav: true,
         loop:true,
         items: 4,
         responsive:{
@@ -76,14 +97,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
-    $(".items").isotope({
-        filter: '*',
-        animationOptions: {
-           duration: 1500,
-           easing: 'linear',
-           queue: false 
-        }
-    });
+
 
     $("#filters a").on("click",function() {
         $("#filters .current").removeClass("current");
@@ -105,9 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
         e.preventDefault();
         var targetElement = $(this).attr("href");
         var targetPosition = $(targetElement).offset().top;
-        $("html, body").animate({
-            scrollTop: targetPosition-50}, "slow"    
-        );
+        $("html, body").animate({scrollTop: targetPosition-50}, "slow" );
 
 
     });
@@ -128,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     }
-
 
 
 });
