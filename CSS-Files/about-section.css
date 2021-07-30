@@ -5,14 +5,14 @@
     letter-spacing: 1px;
     overflow: hidden;
 }
-body {
+/* body {
     cursor: none;
 }
 
 .mouse-circle, .mouse-dot {
     border-radius: 50%;
     position: fixed;
-    /* z-index: 300; */
+     z-index: 300; 
     transform: translate(-50%, -50%);
     opacity: 0;
     pointer-events: none;
@@ -70,7 +70,7 @@ body {
         width: 0.5rem;
         height: 0.5rem;
     }
-}
+} */
 
 
 
@@ -88,7 +88,7 @@ body {
     line-height: 1.5;
     font-weight: 400;
     animation: zoomInDown;
-    animation-duration: 3s;
+    animation-duration: 4s;
 }
 
 

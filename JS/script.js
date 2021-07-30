@@ -1,28 +1,28 @@
-const mouseCircle = document.querySelector(".mouse-circle");
-const mouseDot = document.querySelector(".mouse-dot");
+// const mouseCircle = document.querySelector(".mouse-circle");
+// const mouseDot = document.querySelector(".mouse-dot");
 
-let mouseCircleBoolean = true;
+// let mouseCircleBoolean = true;
 
-const circleFunction = (x,y) =>{
-    mouseCircleBoolean && (mouseCircle.style.cssText = `top: ${y}px; left:${x}px; opacity:1`);
-    //console.log("checking if the loader is being loaded or not" + mouseCircleBoolean);
-    mouseDot.style.cssText = `top: ${y}px; left:${x}px; opacity:1`;
+// const circleFunction = (x,y) =>{
+//     mouseCircleBoolean && (mouseCircle.style.cssText = `top: ${y}px; left:${x}px; opacity:1`);
+//     //console.log("checking if the loader is being loaded or not" + mouseCircleBoolean);
+//     mouseDot.style.cssText = `top: ${y}px; left:${x}px; opacity:1`;
 
 
-};
+// };
 
-document.body.addEventListener("mousemove", (e) => {
-    let x = e.clientX;
-    let y = e.clientY;
+// document.body.addEventListener("mousemove", (e) => {
+//     let x = e.clientX;
+//     let y = e.clientY;
 
-    circleFunction(x,y);
+//     circleFunction(x,y);
 
-});
-document.body.addEventListener("mouseleave", (e) => {
-    mouseCircle.style.opacity = "0";
-    mouseDot.style.opacity = "0";
+// });
+// document.body.addEventListener("mouseleave", (e) => {
+//     mouseCircle.style.opacity = "0";
+//     mouseDot.style.opacity = "0";
 
-});
+// });
 
 $(window).on("load", function() {
 
