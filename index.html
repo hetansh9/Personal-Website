@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hetansh Patel</title>
 
-    
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/superslides.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/arrow.css">
     <link rel = "stylesheet" type = "text/css" href = "CSS-Files/about-section.css">
@@ -54,6 +54,8 @@
         </div>
     </div>
 
+    <div class = "mouse-circle"></div>
+    <div class = "mouse-dot"></div>
     <nav id = "navigation" class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">HP</a>
@@ -86,165 +88,172 @@
         <div id = "stars"></div>
         <div id = "stars2"></div>
         <div id = "stars3"></div>
-
-        <div id = "about" >
-
-            <div class = "container">
-                
-                <div class = "row">
-                    <div class = "col-md-5">  
-                        <img class = "about-image" src="images/hetansh.jpeg" >
-                    </div>
-                    <div class = "col-md-7">
-                        <h4>Hello!! How are you ?</h4>
-                        <h5>I am Hetansh Patel.</h5>
-                        <p>Turning away from the ledge, he started slowly down the mountain, deciding that he would, that very night, satisfy his curiosity about the man-house. In the meantime, he would go down into the canyon and get a cool drink, after which he would visit some berry patches just over the ridge, and explore among the foothills a bit before his nap-time, which always came just after the sun had walked past the middle of the sky. At that period of the day the sun’s warm rays seemed to cast a sleepy spell over the silent mountainside, so all of the animals, with one accord, had decided it should be the hour for their mid-day sleep</p>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div id = "skills" class = "skills-section ">
-
-            <div class = "container">
-                
-                <div class = "row">
-
-                    <div class = "col-md-12 text-center">
-                        <h2>Technical Skills</h2>
-                        <p> A representation of my Technical Skills </p>
-                    </div>
-                    <div class="owl-carousel owl-theme">
-                    <div class = "skill">
-                        <span class = "chart" data-percent = "85">
-                                <span class = "percent">67</span>
-                                    <canvas height = "152" width = "152"></canvas>
-                            </span>
-                            <h4>Javascript</h4>
-                            <p>Used in web based</p>
+        <section class = "about-section">
+            <div id = "about" >
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "heading">
+                            <h2>About Me <i class="fas fa-address-card"></i></h2>
                         </div>
-                        <div class = "skill">
-                            <span class = "chart" data-percent = "90">
-                                <span class = "percent">90</span>
-                                    <canvas height = "152" width = "152"></canvas>
-                            </span>
-                            <h4>HTML</h4>
-                            <p>Personal Project Experience</p>
+                        <div class = "col-md-5">  
+                            <img class = "about-image" src="images/hetansh.jpeg" >
                         </div>
-                        <div class = "skill">
-                            <span class = "chart" data-percent = "80">
-                                <span class = "percent">80</span>
-                                    <canvas height = "152" width = "152"></canvas>
-                            </span>
-                            <h4>Python</h4>
-                            <p>Experience with Machine Learning Projects</p>
-                        </div>
-                        <div class = "skill">
-                            <span class = "chart" data-percent = "60">
-                                <span class = "percent">60</span>
-                                    <canvas height = "152" width = "152"></canvas>
-                            </span>
-                            <h4>Swift</h4>
-                            <p>Personal Project Experience</p>
+                        <div class = "col-md-7">
+                            <h4>Hello!! How are you ?</h4>
+                            <h5>I am Hetansh Patel.</h5>
+                            <p>Turning away from the ledge, he started slowly down the mountain, deciding that he would, that very night, satisfy his curiosity about the man-house. In the meantime, he would go down into the canyon and get a cool drink, after which he would visit some berry patches just over the ridge, and explore among the foothills a bit before his nap-time, which always came just after the sun had walked past the middle of the sky. At that period of the day the sun’s warm rays seemed to cast a sleepy spell over the silent mountainside, so all of the animals, with one accord, had decided it should be the hour for their mid-day sleep</p>
                         </div>
                     </div>
+                </div>    
+            </div>
+        </section>
+        <section class = "skills-stats">
+            <div id = "skills" class = "skills-section ">
+
+                <div class = "container">
                     
-                </div>
-            </div>    
-        </div>
-        <div id = "stats" class = "stats-section section">
+                    <div class = "row">
 
-            <div class = "container">
-                
-                <div class = "row">
+                        <div class = "col-md-12 text-center">
+                            <h2>Technical Skills</h2>
+                            <p> A representation of my Technical Skills </p>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                        <div class = "skill">
+                            <span class = "chart" data-percent = "85">
+                                    <span class = "percent">67</span>
+                                        <canvas height = "152" width = "152"></canvas>
+                                </span>
+                                <h4>Javascript</h4>
+                                <p>Used in web based</p>
+                            </div>
+                            <div class = "skill">
+                                <span class = "chart" data-percent = "90">
+                                    <span class = "percent">90</span>
+                                        <canvas height = "152" width = "152"></canvas>
+                                </span>
+                                <h4>HTML</h4>
+                                <p>Personal Project Experience</p>
+                            </div>
+                            <div class = "skill">
+                                <span class = "chart" data-percent = "80">
+                                    <span class = "percent">80</span>
+                                        <canvas height = "152" width = "152"></canvas>
+                                </span>
+                                <h4>Python</h4>
+                                <p>Experience with Machine Learning Projects</p>
+                            </div>
+                            <div class = "skill">
+                                <span class = "chart" data-percent = "60">
+                                    <span class = "percent">60</span>
+                                        <canvas height = "152" width = "152"></canvas>
+                                </span>
+                                <h4>Swift</h4>
+                                <p>Personal Project Experience</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+            <div id = "stats" class = "stats-section">
 
-                    <div class = "col-md-4 col-sm-6">
+                <div class = "container">
+                    
+                    <div class = "row">
+                        <div class = "heading">
+                            <h2>Website Facts</h2>
+                        </div>
 
-                        <div class = "square-item">
+                        <div class = "col-md-4 col-sm-6">
 
-                            <div class = "square-inside-container">
+                            <div class = "square-item">
 
-                                <div class = "square-Icon">
+                                <div class = "square-inside-container">
+
+                                    <div class = "square-Icon">
+                                        
+                                        <i class = "fa fa-book"></i>
                                     
-                                    <i class = "fa fa-book"></i>
-                                
-                                </div>
+                                    </div>
 
 
-                                <div class = "square-Content">
-                                    <h2 class = "counter">5</h2>
-                                    <h3>Total Projects</h3>
+                                    <div class = "square-Content">
+                                        <h2 class = "counter">5</h2>
+                                        <h3>Total Projects</h3>
+                                    </div>
+
                                 </div>
 
                             </div>
-
                         </div>
-                    </div>
 
-                    <div class = "col-md-4 col-sm-6">
+                        <div class = "col-md-4 col-sm-6">
 
-                        <div class = "square-item">
+                            <div class = "square-item">
 
-                            <div class = "square-inside-container">
+                                <div class = "square-inside-container">
 
-                                <div class = "square-Icon">
+                                    <div class = "square-Icon">
+                                        
+                                        <div id = "div1" class = "fa"></div>
+                                            <script>function hourglass() {
+                                                var a;
+                                                a = document.getElementById("div1");
+                                                a.innerHTML = "&#xf251;";
+                                                setTimeout(function () {
+                                                    a.innerHTML = "&#xf252;";
+                                                }, 1000);
+                                                setTimeout(function () {
+                                                    a.innerHTML = "&#xf253;";
+                                                }, 2000);
+                                            }
+                                            hourglass();
+                                            setInterval(hourglass, 3000);</script>
                                     
-                                    <div id = "div1" class = "fa"></div>
-                                        <script>function hourglass() {
-                                            var a;
-                                            a = document.getElementById("div1");
-                                            a.innerHTML = "&#xf251;";
-                                            setTimeout(function () {
-                                                a.innerHTML = "&#xf252;";
-                                            }, 1000);
-                                            setTimeout(function () {
-                                                a.innerHTML = "&#xf253;";
-                                            }, 2000);
-                                        }
-                                        hourglass();
-                                        setInterval(hourglass, 3000);</script>
-                                
-                                </div>
+                                    </div>
 
 
-                                <div class = "square-Content">
-                                    <h2 class = "counter">50</h2>
-                                    <h3>Hours Spent</h3>
+                                    <div class = "square-Content">
+                                        <h2 class = "counter">50</h2>
+                                        <h3>Hours Spent</h3>
+                                    </div>
+
                                 </div>
 
                             </div>
-
                         </div>
-                    </div>
-                    <div class = "col-md-4 col-sm-6">
+                        <div class = "col-md-4 col-sm-6">
 
-                        <div class = "square-item">
+                            <div class = "square-item">
 
-                            <div class = "square-inside-container">
+                                <div class = "square-inside-container">
 
-                                <div class = "square-Icon">
+                                    <div class = "square-Icon">
+                                        
+                                        <i class = "fas fa-code"></i>
                                     
-                                    <i class = "fas fa-code"></i>
-                                
-                                </div>
+                                    </div>
 
 
-                                <div class = "square-Content">
-                                    <h2 class = "counter">500</h2>
-                                    <h3>Lines of Code</h3>
+                                    <div class = "square-Content">
+                                        <h2 class = "counter">500</h2>
+                                        <h3>Lines of Code</h3>
+                                    </div>
+
                                 </div>
 
                             </div>
-
                         </div>
+
+                        
+                        
+                        
                     </div>
+                </div> 
 
-                    
-                    
-                    
-                </div>
-            </div> 
-
-        </div>
+            </div>
+        </section>
         
         <div id = "work" class="work">
             <div class="container">

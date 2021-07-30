@@ -5,6 +5,92 @@
     letter-spacing: 1px;
     overflow: hidden;
 }
+body {
+    cursor: none;
+}
+
+.mouse-circle, .mouse-dot {
+    border-radius: 50%;
+    position: fixed;
+    /* z-index: 300; */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mouse-circle {
+    width: 6rem;
+    height: 6rem;
+    border: 0.5rem solid #c7a622;
+    animation: mouseCircleAnimation 10s infinite linear;
+
+}
+
+@keyframes mouseCircleAnimation {
+    0%{
+        width: 6rem;
+        height: 6rem;
+    }
+    25% {
+        width: 8rem;
+        height: 8rem;
+    }
+    35%{
+        width: 4rem;
+        height: 4rem;
+    }
+    70%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6rem;
+        height: 6rem;
+        
+    }
+}
+
+.mouse-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #9b0e0e;
+    animation: mouseDotAnimation 10s linear;
+}
+
+@keyframes mouseDotAnimation {
+    0% {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    55% {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    100% {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+
+
+
+.about-section {
+    padding-bottom: 30px;
+}
+.about-section .heading {
+    font-family: sans-serif;
+    color:#fff;
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+    animation: zoomInDown;
+    animation-duration: 3s;
+}
+
 
 .col-md-7 {
     color: #fff;

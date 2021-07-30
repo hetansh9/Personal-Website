@@ -1,3 +1,29 @@
+const mouseCircle = document.querySelector(".mouse-circle");
+const mouseDot = document.querySelector(".mouse-dot");
+
+let mouseCircleBoolean = true;
+
+const circleFunction = (x,y) =>{
+    mouseCircleBoolean && (mouseCircle.style.cssText = `top: ${y}px; left:${x}px; opacity:1`);
+    //console.log("checking if the loader is being loaded or not" + mouseCircleBoolean);
+    mouseDot.style.cssText = `top: ${y}px; left:${x}px; opacity:1`;
+
+
+};
+
+document.body.addEventListener("mousemove", (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+
+    circleFunction(x,y);
+
+});
+document.body.addEventListener("mouseleave", (e) => {
+    mouseCircle.style.opacity = "0";
+    mouseDot.style.opacity = "0";
+
+});
+
 $(window).on("load", function() {
 
     $(".loader .innner").fadeOut(500, function() {
@@ -37,6 +63,14 @@ document.addEventListener("DOMContentLoaded", function(){
         
     });
 
+    var animateHeading  = $(".about-section .heading").offset().top;
+    $(window).on('scroll',function() {
+        if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
+            const element = document.querySelector('.about-section .heading');
+            element.classList.add('animate__animated', 'animate__zoomInDown');
+        }
+    });
+
     $('.owl-carousel').owlCarousel({
         nav: true,
         loop:true,
@@ -61,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var skillsOffset = $(".skills-section").offset().top;
 
-    $(window).on('scroll',function() {
+    $(window).on("scroll",function() {
         //gets the page value or the distance from the top to the section
         if(window.pageYOffset > skillsOffset - $(window).height() + 200) {
             $('.chart').easyPieChart({
@@ -84,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var statsOffset = $(".stats-section").offset().top;
     var countNumber = false;
-    $(window).on('scroll',function() {
+    $(window).on("scroll",function() {
         if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
             $(".counter").each(function() {
                 var element = $(this);

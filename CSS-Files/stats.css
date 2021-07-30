@@ -1,4 +1,14 @@
-
+.skills-stats #stats .heading {
+    font-family: sans-serif;
+    color:#0abdf8;
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+}
 
 .square-item {
     margin-top: 30px;
