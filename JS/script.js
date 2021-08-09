@@ -1,3 +1,49 @@
+// const mouseCircle = document.querySelector(".mouse-circle");
+// const mouseDot = document.querySelector(".mouse-dot");
+
+// let mouseCircleBoolean = true;
+
+// const circleFunction = (x,y) =>{
+//     mouseCircleBoolean && (mouseCircle.style.cssText = `top: ${y}px; left:${x}px; opacity:1`);
+//     //console.log("checking if the loader is being loaded or not" + mouseCircleBoolean);
+//     mouseDot.style.cssText = `top: ${y}px; left:${x}px; opacity:1`;
+
+
+// };
+
+// document.body.addEventListener("mousemove", (e) => {
+//     let x = e.clientX;
+//     let y = e.clientY;
+
+//     circleFunction(x,y);
+
+// });
+// document.body.addEventListener("mouseleave", (e) => {
+//     mouseCircle.style.opacity = "0";
+//     mouseDot.style.opacity = "0";
+
+// });
+
+$(window).on("load", function() {
+
+    $(".loader .innner").fadeOut(500, function() {
+
+            $(".loader").fadeOut(700);
+    
+    });
+
+    $(".items").isotope({
+        filter: '*',
+        animationOptions: {
+           duration: 1500,
+           easing: 'linear',
+           queue: false 
+        }
+    });
+
+});
+
+
 document.addEventListener("DOMContentLoaded", function(){
     
     // superslides function
@@ -17,7 +63,16 @@ document.addEventListener("DOMContentLoaded", function(){
         
     });
 
+    var animateHeading  = $(".about-section .heading").offset().top;
+    $(window).on('scroll',function() {
+        if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
+            const element = document.querySelector('.about-section .heading');
+            element.classList.add('animate__animated', 'animate__zoomInDown');
+        }
+    });
+
     $('.owl-carousel').owlCarousel({
+        nav: true,
         loop:true,
         items: 4,
         responsive:{
@@ -40,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var skillsOffset = $(".skills-section").offset().top;
 
-    $(window).on('scroll',function() {
+    $(window).on("scroll",function() {
         //gets the page value or the distance from the top to the section
         if(window.pageYOffset > skillsOffset - $(window).height() + 200) {
             $('.chart').easyPieChart({
@@ -63,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var statsOffset = $(".stats-section").offset().top;
     var countNumber = false;
-    $(window).on('scroll',function() {
+    $(window).on("scroll",function() {
         if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
             $(".counter").each(function() {
                 var element = $(this);
@@ -75,5 +130,50 @@ document.addEventListener("DOMContentLoaded", function(){
         
         }
     });
+
+
+
+    $("#filters a").on("click",function() {
+        $("#filters .current").removeClass("current");
+        $(this).addClass("current");
+        var selector = $(this).attr("data-filter");
+
+        $(".items").isotope({
+            filter: selector,
+            animationOptions: {
+               duration: 1500,
+               easing: 'linear',
+               queue: false 
+            }
+        });
+        return false;
+    });
+
+    $("#navigation li a").on("click", function(e) {
+        e.preventDefault();
+        var targetElement = $(this).attr("href");
+        var targetPosition = $(targetElement).offset().top;
+        $("html, body").animate({scrollTop: targetPosition-50}, "slow" );
+
+
+    });
+
+    const nav = $("#navigation");
+    const navTop = nav.offset().top;
+    $(window).on("scroll", stickNavigation);
+
+    function stickNavigation() {
+        var body = $("body");
+        if ( $(window).scrollTop() >= navTop) {
+            body.css("padding-top", nav.outerHeight() + "px");
+            body.addClass("fixedNav");
+    }
+    else {
+        body.css("padding-top", 0);
+        body.removeClass("fixedNav");
+    }
+
+    }
+
 
 });

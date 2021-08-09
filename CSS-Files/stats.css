@@ -1,4 +1,14 @@
-
+.skills-stats #stats .heading {
+    font-family: sans-serif;
+    color:#0abdf8;
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+}
 
 .square-item {
     margin-top: 30px;
@@ -9,7 +19,7 @@
     position: relative;
     padding: 50px 15px 35px;
     text-align: center;
-    border: 2px solid #444;
+    border: 2px solid #fff;
     border-top: none;
 }
 
@@ -19,7 +29,7 @@
     position: absolute;
     top: 0px;
     width: 30%;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #fff;
 
 }
 
@@ -36,13 +46,15 @@
     font-size: 56px;
     margin: 10px;
     font-weight: 400;
-    color:rgb(3, 3, 3);
+    color:#fff;
 }
 
 .square-Content h3 {
     font-size: 13px;
     font-weight: 600;
     margin: 0;
+    color: #fff;
+
     
 }
 
@@ -54,6 +66,6 @@
     height: 60px;
     font-size: 45px;
     margin-left: -20%;
-    color: #444;
+    color: #fff;
 
 }
