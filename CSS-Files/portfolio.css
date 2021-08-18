@@ -1,3 +1,4 @@
+
 .filter a {
     color: #fff;
     border: 1px solid #fff;
@@ -261,5 +262,17 @@
     background-color:#fff;
 }
 
+.alert-message {
+    padding: 20px;
+    background-color: #e74c3c; 
+    color: black;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight:bolder;
+}
+
+.button-close {
+    margin-left: 15px;
 
 
+}
