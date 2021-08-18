@@ -70,6 +70,9 @@ document.addEventListener("DOMContentLoaded", function(){
         if(!countNumber && window.pageYOffset > statsOffset - $(window).height() + 200) {
             const element = document.querySelector('.about-section .heading');
             element.classList.add('animate__animated', 'animate__zoomInDown');
+
+            const infoElement = document.querySelector('.alert-message');
+            infoElement.classList.add('animate__animated', 'animate_bounce');
         }
     });
 
@@ -92,8 +95,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         }
     });
-  
-    
+
 
     var skillsOffset = $(".skills-section").offset().top;
 
@@ -180,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
- 
+ // timeline 
 "use strict";
 
 function qs(selector, all = false) {

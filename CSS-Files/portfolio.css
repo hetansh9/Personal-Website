@@ -21,6 +21,7 @@
 .filter {
     text-align: center;
     width: 100%;
+    padding-top: 10px;
 
 }
 
@@ -232,10 +233,10 @@
     top: 0;
 }
 
-.resume {
-    padding: 0px;
+.about-section .resume-download {
+    padding-top: 5px;
 }
-.resume .heading {
+/* .resume .heading {
     font-family: sans-serif;
     color:#fff;
     font-size: x-large;
@@ -245,9 +246,9 @@
     width: 100%;
     line-height: 1.5;
     font-weight: 400;
-}
+} */
 
-.resume .btn {
+.resume-download .btn {
     background-color:#e74c3c;
     border: none;
     border-radius: 15px;
@@ -255,24 +256,35 @@
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
-    width: 100%;
+    width: 50%;
 }
 
-.btn:hover {
+.resume-download .btn:hover {
     background-color:#fff;
 }
 
 .alert-message {
     padding: 20px;
-    background-color: #e74c3c; 
+    background-color:#e74c3c;
     color: black;
     border-radius: 15px;
     font-size: 15px;
     font-weight:bolder;
+    animation: bounce;
+    animation-duration: 11s;
 }
 
 .button-close {
     margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    float: right;
+    cursor: pointer;
+    line-height: 20px;
+    transition: 0.3s;
+}
 
-
+.button-close:hover{
+    color: black;
 }
