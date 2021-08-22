@@ -12,7 +12,16 @@ div { padding: 0px; margin: 0px; }
     /* background-color: #4c4177; */
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
 }
+.work .top-section h1{
+    color: khaki;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
 
+.work .content h2 {
+    color: #4fc0c2;
+    font-weight: bolder;
+}
 .work .container{
     padding: 2rem;
     padding-top: 0px;
