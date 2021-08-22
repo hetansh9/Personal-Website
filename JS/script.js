@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if(window.pageYOffset > skillsOffset - $(window).height() + 200) {
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
-                barColor: '#fff',
+                barColor: '#4fc0c2',
                 trackColor: false,
                 lineWidth: 4,
                 size: 152,

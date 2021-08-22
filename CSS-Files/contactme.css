@@ -17,10 +17,10 @@
     max-width: 800px;
     text-align: center;
 }
-.contact .contact-content h2 {
+.contact .contact-content h1 {
     font-size: 36px;
-    font-weight: 500;
-    color: #fff;
+    font-weight: 400;
+    color: khaki;
 }
 
  .contact .container {
@@ -76,7 +76,8 @@
 
 
 .contact-form {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     padding: 40px;
     background: #fff;
 

@@ -26,8 +26,8 @@
 }
 
 .projects .heading {
-    font-family: sans-serif;
-    color:#fff;
+    font-family: 'Playfair Display', serif;
+    color:khaki;
     font-size: x-large;
     font-weight: 100;
     text-align: center;
@@ -356,18 +356,19 @@
 } */
 
 .resume-download .btn {
-    background-color:#e74c3c;
+    background-color:azure;
     border: none;
     border-radius: 15px;
-    color: white;
+    color: black;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    font-weight: 400;
     width: 50%;
 }
 
 .resume-download .btn:hover {
-    background-color:#fff;
+    background-color:#e74c3c;
 }
 
 .alert-message {

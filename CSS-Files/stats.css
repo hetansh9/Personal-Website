@@ -1,8 +1,8 @@
 .skills-stats #stats .heading {
-    font-family: sans-serif;
-    color:#0abdf8;
+    font-family: 'Playfair Display', serif;
+    color: khaki;
     font-size: xx-large;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 40px;
     width: 100%;
@@ -46,7 +46,7 @@
     font-size: 56px;
     margin: 10px;
     font-weight: 400;
-    color:#fff;
+    color:lightcoral;
 }
 
 .square-Content h3 {
@@ -66,6 +66,6 @@
     height: 60px;
     font-size: 45px;
     margin-left: -20%;
-    color: #fff;
+    color: #4fc0c2;
 
 }

@@ -77,11 +77,13 @@
 .about-section {
     padding-bottom: 30px;
 }
+
+
 .about-section .heading {
-    font-family: sans-serif;
-    color:#fff;
+    font-family: 'Playfair Display', serif;
+    color: khaki;
     font-size: xx-large;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     padding-bottom: 40px;
     width: 100%;
@@ -96,8 +98,13 @@
     color: #fff;
 }
 
+.col-md-12 h1{
+    font-family: 'Playfair Display', serif;
+    color: khaki;
+}
+
 .row{
-    padding: 100px;
+    padding: 10px;
 }
 
 .about-image {
@@ -128,7 +135,7 @@
 }
 
 .chart .percent {
-    color: #fff ;
+    color:lightcoral;
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
