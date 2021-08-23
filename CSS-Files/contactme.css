@@ -21,6 +21,9 @@
     font-size: 36px;
     font-weight: 400;
     color: khaki;
+    font-family: 'Playfair Display', serif;
+    animation: fadeInUp;
+    animation-duration: 8s;
 }
 
  .contact .container {
@@ -76,7 +79,7 @@
 
 
 .contact-form {
-    width: 100%;
+    width: 50%;
     height: 100%;
     padding: 40px;
     background: #fff;
@@ -91,7 +94,7 @@
 
 .contact-form .inputBox {
     position: relative;
-    width: 100%;
+    width: 70%;
     margin-top: 10px;
 
 }

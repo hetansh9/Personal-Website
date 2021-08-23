@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function(){
                     $(this.el).find('.percent').text(Math.round(percent));
                 }
             });
-            // const skillsElement  = document.querySelector('.skills-section .container h1');
-            // skillsElement.classList.add('animate_animated', 'fadeInUp');
+            const skillsElement  = document.querySelector('.skills-section .container h1');
+            skillsElement.classList.add('animate_animated', 'fadeInUp');
 
         }
     });
@@ -139,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function(){
         
             countNumber = true;
 
-            // const statsElement  = document.querySelector('.stats-section .container h1');
-            // statsElement.classList.add('animate_animated', 'fadeInUp');
+            const statsElement  = document.querySelector('.stats-section .container h1');
+            statsElement.classList.add('animate_animated', 'fadeInUp');
         
         }
     });
@@ -191,17 +191,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
     var aboutmeOffset = $(".about-section").offset().top;
 
-    var skillsOffset = $(".skills-section .container h1").offset().top
+    var skillsOffset = $(".skills-section").offset().top
 
-    // $(window).on("scroll", function(){
+    var contactOffset = $(".contact").offset().top;
 
-    //     if(window.pageYOffset > aboutmeOffset - $(window).height() + 200) {
-    //         const aboutElement  = document.querySelector('.about-section .container');
-    //         aboutElement.classList.add('animate_animated', 'fadeInUp');
-    //     }
+    $(window).on("scroll", function(){
+
+        if(window.pageYOffset > aboutmeOffset - $(window).height() + 200) {
+            const aboutElement  = document.querySelector('.about-section .container');
+            aboutElement.classList.add('animate_animated', 'fadeInUp');
+        }
+
+        if(window.pageYOffset > contactOffset - $(window).height() + 200) {
+            const contactElement  = document.querySelector(".contact .contact-content h1");
+            contactElement.classList.add('animate_animated', 'fadeInUp');
+        }
 
 
-    // });
+    });
 
 
 });

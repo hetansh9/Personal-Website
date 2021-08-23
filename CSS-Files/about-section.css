@@ -113,10 +113,12 @@
     animation-duration: 6s;
 }
 
-/* .stats-section .container h1 {
+.stats-section .container h1 {
     animation: fadeInUp;
-    animation-duration: 6s;
-} */
+    animation-duration: 8s;
+}
+
+
 
 
 .col-md-12 h1{
