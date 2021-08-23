@@ -373,13 +373,13 @@
 
 .alert-message {
     padding: 20px;
-    background-color:#e74c3c;
+    background-color:lightcoral;
     color: black;
     border-radius: 15px;
-    font-size: 15px;
     font-weight:bolder;
     animation: bounce;
     animation-duration: 11s;
+    font-size: 17px;
 }
 
 .button-close {

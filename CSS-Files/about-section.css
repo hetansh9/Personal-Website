@@ -5,6 +5,11 @@
     letter-spacing: 1px;
     overflow: hidden;
 }
+
+.about-section .container {
+    animation: fadeInUp;
+    animation-duration: 4s;
+}
 /* body {
     cursor: none;
 }
@@ -89,14 +94,30 @@
     width: 100%;
     line-height: 1.5;
     font-weight: 400;
-    animation: zoomInDown;
-    animation-duration: 4s;
+    /* animation: zoomInDown;
+    animation-duration: 4s; */
+}
+
+.col-md-5 img {
+    /* animation: fadeInUp;
+    animation-duration: 6s; */
 }
 
 
 .col-md-7 {
     color: #fff;
 }
+
+.col-md-7  {
+    animation: fadeInUp;
+    animation-duration: 6s;
+}
+
+/* .stats-section .container h1 {
+    animation: fadeInUp;
+    animation-duration: 6s;
+} */
+
 
 .col-md-12 h1{
     font-family: 'Playfair Display', serif;
