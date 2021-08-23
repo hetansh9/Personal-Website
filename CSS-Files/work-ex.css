@@ -16,6 +16,8 @@ div { padding: 0px; margin: 0px; }
     color: khaki;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    animation: fadeInUp;
+    animation-duration: 10s;
 }
 
 .work .content h2 {
