@@ -7,10 +7,10 @@
 }
 
 
-.about-section .container {
+/* .about-section .container {
     animation: fadeInUp;
     animation-duration: 4s;
-}
+} */
 /* body {
     cursor: none;
 }
@@ -109,15 +109,7 @@
     color: #fff;
 }
 
-.col-md-7  {
-    animation: fadeInUp;
-    animation-duration: 6s;
-}
 
-.stats-section .container h1 {
-    animation: fadeInUp;
-    animation-duration: 8s;
-}
 
 
 
