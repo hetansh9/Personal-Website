@@ -90,7 +90,18 @@
     -ms-transition: all 0.2s linear, 0.2s;
     -transition: all 0.2s linear, 0.2s;   
 }
+.items #someButton {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -ms-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s; 
 
+}
 .items a {
     position: relative;
     display: inline-block;
